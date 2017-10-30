@@ -1,6 +1,34 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color:#FC5A65;
+    color:white;
+}
+
+.jumbotron{
+background-image:url('Images/Jumbotron Picture.PNG');
+background-size:cover;
+height:350px;
+}
+
+.coverText{
+    padding-top:200px;
+}
+
+.bold{
+    font-weight: bold;
+}
+.btn btn-primary{
+    background-color:#FC5A65;
+}
+
+.thumbnail{
+    background-color:#222222;
+    border-color:#222222;
+}
+
+.button{
+    background-color:#F47621;
 }
 
 /* Set padding to keep content from hitting the edges */

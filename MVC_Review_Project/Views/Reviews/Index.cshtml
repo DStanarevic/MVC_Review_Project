@@ -1,0 +1,33 @@
+﻿@model IEnumerable<MVC_Review_Project.Models.Review>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-sm-6 col-md-4 col">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h3 style="color:white">@Html.DisplayFor(modelItem => item.Place)</h3>
+                    <p style="color:white">@Html.DisplayNameFor(model => model.FunLevel):@Html.DisplayFor(modelItem => item.FunLevel)</p>
+                    <p style="color:white">Open from: @Html.DisplayFor(modelItem => item.From) to @Html.DisplayFor(modelItem => item.Until) </p>
+                    <p>@Html.ActionLink("More info.", "Details", new { id = item.ID }, new { @class = "btn btn-primary", role = "button"})</p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+
+
+
+

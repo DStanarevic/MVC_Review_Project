@@ -1,0 +1,29 @@
+﻿@model MVC_Review_Project.Models.Review
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+<div>
+    <h1> @Html.DisplayFor(model => model.Place) </h1>
+    <h4> Details </h4>
+
+    <p class="bold">@Html.DisplayNameFor(model => model.Type) </p>
+    <p>@Html.DisplayFor(model => model.Type)</p>
+    <p class="bold">@Html.DisplayNameFor(model => model.Location)</p>
+    <p>@Html.DisplayFor(model => model.Location)</p>
+    <p class="bold">@Html.DisplayNameFor(model => model.Description)</p>   
+    <p>@Html.DisplayFor(model => model.Description)</p>
+    <p class="bold">@Html.DisplayNameFor(model => model.FunLevel)</p>
+    <p>@Html.DisplayFor(model => model.FunLevel)</p>   
+    <p>Hours of Operation:</p><p> From @Html.DisplayFor(model => model.From) to @Html.DisplayFor(model => model.Until)</p>
+
+
+</div>
+
+       
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
